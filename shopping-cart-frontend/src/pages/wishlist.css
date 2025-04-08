@@ -1,0 +1,44 @@
+.wishlist-bg {
+    background: linear-gradient(135deg, #0a0a0a, #2a0a50, #1a0a2a);
+    background-size: 400% 400%;
+    animation: breathing 8s ease-in-out infinite;
+}
+
+.breathing-text {
+    animation: breathingText 5s ease-in-out infinite;
+}
+
+.breathing-card {
+    animation: breathingCard 6s ease-in-out infinite;
+}
+
+@keyframes breathing {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes breathingText {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.85;
+    }
+}
+
+@keyframes breathingCard {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px #f0f;
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 40px #0ff;
+    }
+}
